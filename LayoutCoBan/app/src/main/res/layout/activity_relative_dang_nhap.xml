@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeDangNhap">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG NHẬP"
+        android:id="@+id/txtTieude"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Tên DN:"
+        android:id="@+id/txtTenDN"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/edtTenDN"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTenDN"
+        android:layout_below="@+id/txtTieude"
+        android:layout_toEndOf="@+id/txtTenDN"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Mật Khẩu:"
+        android:textSize="20dp"
+        android:id="@+id/txtMatKhau"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/edtMatKhau"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtMatKhau"
+        android:layout_below="@+id/txtTenDN"
+        android:layout_toEndOf="@+id/txtMatKhau"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghi nhớ mật khẩu"
+        android:id="@+id/chkGhiNho"
+        android:layout_below="@+id/edtMatKhau"
+        android:layout_alignStart="@+id/edtMatKhau"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập"
+        android:id="@+id/btnDangNhap"
+        android:layout_below="@id/chkGhiNho"
+        android:layout_alignStart="@id/chkGhiNho"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Huỷ"
+        android:layout_toEndOf="@+id/btnDangNhap"
+        android:layout_alignTop="@+id/btnDangNhap"/>
+
+</RelativeLayout>
